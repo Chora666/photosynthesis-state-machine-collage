@@ -1,0 +1,42 @@
+# Photosynthesis State-Machine Collage
+
+> Interactive audiovisual installation for real-time ambient music. Nine luminous leaf collages
+> grow and decay from light-sensor input; their maturity drives a nine-unit state machine that
+> steers harmony, a `cycle~` drone, synthesised and VST voices, two environmental layers and a
+> Jitter collage. Author: Chaoran Yu (2025). Media is on Google Drive, not in the repository.
+
+## Start here
+
+- [docs/ai-assistant-guide.md](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/docs/ai-assistant-guide.md): setup guide written for AI assistants — what to install, how to resolve the project folder, what to substitute (read this first if you are helping a human)
+- [REPORT.pdf](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/REPORT.pdf): the written project report (7 pages)
+- [USER_GUIDE.docx](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/USER_GUIDE.docx): the author's prototype user guide
+- [docs/setup-guide.md](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/docs/setup-guide.md): the operating manual
+- [README.md](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/README.md): project overview, demo links, requirements
+- [README.zh-CN.md](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/README.zh-CN.md): 简体中文说明
+
+## Key facts
+
+- Max 9.0.8 (x64) saved in the patch; developed with Jitter
+- Main patch: `patch/Photosynthesis_StateMachine_Collage.maxpat` (1,861 objects, 28 subpatchers)
+- Abstractions: 13 files in `patch/Photosynthesis_StateMachine_Collage_Files/Levan_Patch/`
+- Images: nine 1024×1024 leaf PNGs in `…_Files/S2_Leaf/`, imported at load
+- Environmental audio: `Birds` and `Wind` buffers — Soundly recordings, **not stored**, linked from the README
+- VST plug-ins: Valhalla VintageVerb, Scarred Piano — **not included**
+- Arduino: four light sensors, `serial c` and `serial f` at 9600 baud; mouse fallback exists
+- The Arduino sketch is not among the supplied project files
+- Media: installation demo, technical walkthrough and the two environmental recordings on Google Drive (linked from the README)
+
+## Documents
+
+- [Setup and operating guide](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/docs/setup-guide.md): wiring, search paths, interaction, states, shutdown
+- [Environment notes](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/docs/environment.md): what the project files record and what they do not
+- [Verification notes](https://raw.githubusercontent.com/Chora666/photosynthesis-state-machine-collage/main/docs/verification.md): static checks and optional fresh-setup checks
+- `REPORT.pdf` (repository root) — the written report, 7 pages
+- `docs/architecture/` — annotated patch figures taken from the walkthrough video
+
+## Licensing
+
+- Patch and abstractions: PolyForm Noncommercial 1.0.0 (`LICENSE.md`) — free for noncommercial
+  use; commercial use requires a separate licence from the author
+- Documentation, report and leaf images: CC BY-NC 4.0 — attribution required, non-commercial only
+- Citation and credit line: `NOTICE.md`

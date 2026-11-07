@@ -1,0 +1,13 @@
+# Media and plug-in state are not distributed (linked from Google Drive / replaced by the user)
+*.wav
+*.aif
+*.aiff
+*.mp4
+*.mov
+*.m4v
+*.mp3
+*.m4a
+*.maxsnap
+
+# macOS
+.DS_Store
